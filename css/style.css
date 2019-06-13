@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    /* vh: https://css-tricks.com/fun-viewport-units/ */
+    background: linear-gradient(#222329 0, #222329 100px, #fff 100vh);
+    color: #222329;
+}
+body#homepage {
+    /* https://stackoverflow.com/questions/2504071/how-do-i-combine-a-background-image-and-css3-gradient-on-the-same-element*/
+    background-image: url('../assets/images/hero-background-desktop.jpg'), linear-gradient(#222329 0%, #222329 100vh, #fff 100%);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+#tall {
+    height: 9999px;
+}
