@@ -14,6 +14,7 @@ body {
     /* 
       vh: https://css-tricks.com/fun-viewport-units/
       this is your background for pages that don't have a bg image
+      linear-gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
     */
     background: linear-gradient(#222229 0, #222229 100px, #fff 100vh);
     color: #222229;
@@ -24,6 +25,7 @@ body#homepage {
     background: linear-gradient(#222229 0, #222229 100vh, #fff 100%);
 }
 #wrapper {
+    /* surrounds responsive content, keeps it centered on a large screen */
     max-width: 1400px;
     margin: 0 auto;
     min-height: 100vh;
@@ -45,9 +47,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-.menu {
-    width: 32px;
-}
+
 .hero {
     padding: 1rem;
     color: #fff;
