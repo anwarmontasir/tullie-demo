@@ -1,7 +1,9 @@
+/* basic styles */
 * {
     box-sizing: border-box;
 }
 img {
+    /* responsive images: https://www.w3schools.com/howto/howto_css_image_responsive.asp */
     width: 100%;
     height: auto;
 }
@@ -16,7 +18,7 @@ body {
     background: linear-gradient(#222229 0, #222229 100px, #fff 100vh);
     color: #222229;
     font-family: "Montserrat", sans-serif;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 body#homepage {
     background: linear-gradient(#222229 0, #222229 100vh, #fff 100%);
@@ -38,7 +40,6 @@ header {
 }
 nav {
     text-align: right;
-    line-height: 1.6;
 }
 nav ul li a {
     color: #fff;
@@ -51,10 +52,13 @@ nav ul li a {
     padding: 1rem;
     color: #fff;
     font-size: 1.25rem;
-    min-height: 2000px;
+    
+    /* https://stackoverflow.com/questions/2504071/how-do-i-combine-a-background-image-and-css3-gradient-on-the-same-element */
     background-image: linear-gradient(to right, rgba(34,34,41,1) 0%, rgba(34,34,41,0) 100%), url('../assets/images/hero-background-desktop.jpg');
     background-repeat: no-repeat;
     background-position: top right;
+
+    min-height: 100vh; /* you might erase this line later */
 }
 h1 {
     color: #55EE80;
@@ -64,16 +68,11 @@ h1 {
     margin: 3rem 0;
 }
 
+/* screens larger than mobile */
 @media screen and (min-width: 560px) {
     nav ul li {
         display: inline-block;
         margin-left: 10px;
-    }
-    nav ul li a {
-        color: #fff;
-    }
-    .menu {
-        display: none;
     }
     h1 {
         font-size: 3rem;
