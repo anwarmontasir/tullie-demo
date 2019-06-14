@@ -2,7 +2,10 @@
     box-sizing: border-box;
 }
 body {
-    /* vh: https://css-tricks.com/fun-viewport-units/ */
+    /* 
+      vh: https://css-tricks.com/fun-viewport-units/
+      this is your background for pages that don't have a bg image
+    */
     background: linear-gradient(#222329 0, #222329 100px, #fff 100vh);
     color: #222329;
 }
