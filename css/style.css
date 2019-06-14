@@ -1,20 +1,84 @@
 * {
     box-sizing: border-box;
 }
+img {
+    width: 100%;
+    height: auto;
+}
+strong {font-weight: bold;}
+em {font-style: italic;}
+
 body {
     /* 
       vh: https://css-tricks.com/fun-viewport-units/
       this is your background for pages that don't have a bg image
     */
-    background: linear-gradient(#222329 0, #222329 100px, #fff 100vh);
-    color: #222329;
+    background: linear-gradient(#222229 0, #222229 100px, #fff 100vh);
+    color: #222229;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
 }
 body#homepage {
-    /* https://stackoverflow.com/questions/2504071/how-do-i-combine-a-background-image-and-css3-gradient-on-the-same-element*/
-    background-image: url('../assets/images/hero-background-desktop.jpg'), linear-gradient(#222329 0%, #222329 100vh, #fff 100%);
+    background: linear-gradient(#222229 0, #222229 100vh, #fff 100%);
+}
+#wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222229;
+    padding: 1rem;
+}
+#logo {
+    width: 180px;
+}
+nav {
+    text-align: right;
+    line-height: 1.6;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu {
+    width: 32px;
+}
+.hero {
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.25rem;
+    min-height: 2000px;
+    background-image: linear-gradient(to right, rgba(34,34,41,1) 0%, rgba(34,34,41,0) 100%), url('../assets/images/hero-background-desktop.jpg');
     background-repeat: no-repeat;
     background-position: top right;
 }
-#tall {
-    height: 9999px;
+h1 {
+    color: #55EE80;
+    font-family: "Homemade Apple", cursive;
+    font-style: italic;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+@media screen and (min-width: 560px) {
+    nav ul li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menu {
+        display: none;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .hero {
+        font-size: 1.5rem;
+    }
 }
